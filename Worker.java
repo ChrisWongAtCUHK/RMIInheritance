@@ -1,5 +1,9 @@
 import java.rmi.*;
 
+/* 
+ * This class is a simple client that connects to the remote server and requests a Job. 
+ * It then invokes the process method on the Job to perform the work. 
+ */
 public class Worker {
 	public Worker(){
 		try {

@@ -1,6 +1,11 @@
 import java.rmi.*;
 import java.rmi.server.*;
 
+/*
+ * This server is derived from the original JobQueueImpl class and re-uses the rmiregistry binding portion of the code. 
+ * Main is re-written to make sure that an instance of this object is created instead of the old JobQueueImpl object. 
+ * The getJob method is also modified to return the new types of Jobs. 
+ */
 public class PolyJobQueueImpl extends JobQueueImpl {
 	int index = 1;
 	Job[] list = { new Matrix() , new Prime() };

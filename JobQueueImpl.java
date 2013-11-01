@@ -1,6 +1,9 @@
 import java.rmi.*;
 import java.rmi.server.*;
 
+/* 
+ * This class is one possible implementation of the remote interface above(JobQueue.java).  
+ */
 public class JobQueueImpl extends UnicastRemoteObject 
 			implements JobQueue {
 
